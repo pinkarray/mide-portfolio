@@ -277,7 +277,7 @@ export default function Home() {
             </div>
             <div style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#22d3ee', marginBottom: '0.25rem' }}>10+</p>
-              <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Production Apps</p>
+              <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Production Sites</p>
             </div>
           </div>
         </div>
