@@ -8,7 +8,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section id="top" className={styles.hero}>
       <div className={`${styles.blob} ${styles.blob1}`} aria-hidden="true" />
       <div className={`${styles.blob} ${styles.blob2}`} aria-hidden="true" />
       <div className={`${styles.blob} ${styles.blob3}`} aria-hidden="true" />

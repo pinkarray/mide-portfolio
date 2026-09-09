@@ -92,3 +92,24 @@
     display: none;
   }
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.mark {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+
+@media (min-width: 768px) {
+  .mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+}
