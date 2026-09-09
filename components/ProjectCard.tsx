@@ -14,22 +14,44 @@ export default function ProjectCard({ project, flip }: { project: Project; flip:
       <div className={styles.media}>
         {current ? (
           <>
-            <div className={styles.phone}>
-              <span className={styles.notch} aria-hidden="true" />
-              <video
-                key={current.src}
-                className={styles.video}
-                controls
-                muted
-                playsInline
-                preload="none"
-                poster={current.poster}
-              >
-                <source src={current.src} type="video/mp4" />
-                Your browser does not support video playback.
-              </video>
-              <span className={styles.chin} aria-hidden="true" />
-            </div>
+            {project.frame === 'browser' ? (
+              <div className={styles.browser}>
+                <div className={styles.browserBar} aria-hidden="true">
+                  <span className={styles.browserDot} />
+                  <span className={styles.browserDot} />
+                  <span className={styles.browserDot} />
+                </div>
+                <video
+                  key={current.src}
+                  className={styles.browserVideo}
+                  controls
+                  muted
+                  playsInline
+                  preload="none"
+                  poster={current.poster}
+                >
+                  <source src={current.src} type="video/mp4" />
+                  Your browser does not support video playback.
+                </video>
+              </div>
+            ) : (
+              <div className={styles.phone}>
+                <span className={styles.notch} aria-hidden="true" />
+                <video
+                  key={current.src}
+                  className={styles.video}
+                  controls
+                  muted
+                  playsInline
+                  preload="none"
+                  poster={current.poster}
+                >
+                  <source src={current.src} type="video/mp4" />
+                  Your browser does not support video playback.
+                </video>
+                <span className={styles.chin} aria-hidden="true" />
+              </div>
+            )}
 
             <p className={styles.caption}>{current.title}</p>
 

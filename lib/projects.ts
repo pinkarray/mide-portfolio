@@ -12,6 +12,7 @@ export type Project = {
   link?: string;
   repo?: string;
   previewNote?: string;
+  frame?: 'phone' | 'browser';
   videos?: { title: string; src: string; poster: string }[];
 };
 
@@ -97,7 +98,8 @@ export const projects: Project[] = [
     status: 'Live',
     accent: '#f97316',
     link: 'https://astymin.com.ng',
-    previewNote: 'Live site. Open it in a new tab to look around.',
+    frame: 'browser',
+    videos: [{ title: 'Brand Site', src: '/videos/astymin.mp4', poster: '/posters/astymin.jpg' }],
   },
   {
     id: 'aventra',
@@ -116,6 +118,7 @@ export const projects: Project[] = [
     status: 'Live',
     accent: '#ef4444',
     link: 'https://aventraprovision.com',
+    frame: 'browser',
     videos: [{ title: 'Product Site', src: '/videos/aventra.mp4', poster: '/posters/aventra.jpg' }],
   },
 ];

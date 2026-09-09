@@ -229,3 +229,40 @@
     order: 1;
   }
 }
+
+/* Browser chrome frame for landscape website captures */
+.browser {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 0.65rem;
+  overflow: hidden;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+}
+
+.browserBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background-color: #1e293b;
+}
+
+.browserDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #475569;
+}
+
+.browserVideo {
+  display: block;
+  width: 100%;
+  background-color: #000;
+}
+
+@media (min-width: 1024px) {
+  .browser {
+    max-width: 480px;
+  }
+}
