@@ -22,8 +22,8 @@ export default function Hero() {
 
         <p className={styles.subtitle}>
           I build production web and mobile frontends. Right now that means ClearRent: two Next.js
-          frontends and a Flutter app sharing one design system. Before that, a React Native fintech
-          app serving 15,000+ users.
+          frontends and a Flutter app sharing one design system. Before that, a React Native crypto
+          rewards app serving 15,000+ users.
         </p>
 
         <div className={styles.actions}>
