@@ -263,6 +263,7 @@
 
 @media (min-width: 1024px) {
   .browser {
-    max-width: 480px;
+    width: 480px;
+    max-width: 100%;
   }
 }
